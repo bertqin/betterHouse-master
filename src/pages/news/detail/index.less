@@ -1,0 +1,121 @@
+@import "~@/styles/mixin.less";
+
+.page_news_detail {
+  padding-top: 90px;
+  padding-bottom: 300px;
+
+  .news_wrap {
+    padding: 20px;
+
+    .title {
+      font-size: 40px;
+      font-weight: bold;
+      color: rgba(51, 51, 51, 1);
+      line-height: 70px;
+    }
+
+    .meta {
+      .flex_between_row;
+      .vertical_center;
+      font-size: 29px;
+      height: 108px;
+      .border_1px(bottom, rgba(191, 191, 191, 1));
+      margin-bottom: 45px;
+      color: rgba(149, 149, 149, 1);
+
+      .from {
+        .flex_row;
+        .vertical_center;
+
+        .icon {
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          margin-right: 15px;
+        }
+      }
+
+      .time {
+      }
+    }
+
+    .detail {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .register {
+    padding: 40px 20px;
+
+    .title {
+      font-size: 44px;
+      line-height: 44px;
+      color: rgba(40, 40, 40, 1);
+      position: relative;
+      padding-left: 26px;
+      margin-bottom: 35px;
+
+      &:before {
+        content: '\200b';
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 15px;
+        height: 36px;
+        background: linear-gradient(0deg, rgba(45, 108, 238, 1), rgba(145, 176, 250, 1));
+      }
+    }
+
+    .form_wrap {
+      box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.4);
+      padding: 30px 38px 23px 28px;
+
+      .form {
+        .label{
+          margin-bottom: 20px;
+        }
+        .at-input {
+          height: 62px;
+          padding: 0;
+          margin-left: 0;
+          margin-bottom: 20px;
+          font-size: 26px;
+
+          &:after {
+            border: none;
+            top: 0;
+          }
+
+          .border_1px_all(rgba(191,191,191,1));
+
+          .at-input__container {
+            height: 100%;
+          }
+
+          input {
+            padding: 15px 23px 21px;
+            height: 100%;
+            font-size: 26px;
+          }
+        }
+      }
+
+      .btn_wrap {
+        margin-top: 40px;
+        .flex_center;
+
+        .btn {
+          .flex_center;
+          width: 255px;
+          height: 62px;
+          background: linear-gradient(0deg, rgba(45, 108, 238, 1), rgba(145, 176, 250, 1));
+          border-radius: 10px;
+          font-size: 32px;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+@import "~@/styles/mixin.less";
+
+.page_personal_coupon_index {
+  padding-top: 90px;
+
+  .coupon_item {
+    margin-top: 46px;
+    position: relative;
+
+    &.visited {
+      &:after {
+        content: '\200b';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: rgba(0, 0, 0, .2);
+      }
+
+      .coupon_card .right_wrap .right_top .desc_wrap .btn {
+        border-color: #999;
+        color: #999;
+      }
+    }
+
+    .coupon_card {
+      .flex_row;
+
+      .left_wrap {
+        .flex_center;
+        position: relative;
+        flex-direction: column;
+        width: 224px;
+        height: 189px;
+        background: linear-gradient(90deg, rgba(91, 154, 223, 1), rgba(101, 123, 222, 1));
+        color: rgba(255, 255, 255, 1);
+
+        .price {
+          .flex_row;
+          align-items: flex-end;
+
+          .unit {
+            font-size: 28px;
+            font-weight: bold;
+            position: relative;
+            top: 4px;
+            margin-right: 3px;
+          }
+
+          .num {
+            font-size: 50px;
+            line-height: 50px;
+          }
+        }
+
+        .price_desc {
+          font-size: 24px;
+        }
+      }
+
+      .right_wrap {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 18px 22px 0 33px;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+
+        .right_top {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          border-bottom: 1px dashed rgba(210, 210, 210, 1);;
+          padding-bottom: 12px;
+
+          .title {
+            font-size: 31px;
+            font-weight: bold;
+            color: rgba(41, 41, 41, 1);
+            flex: 1;
+
+          }
+
+          .desc_wrap {
+            .flex_between_row;
+            font-size: 23px;
+
+            .time {
+              color: rgba(41, 41, 41, 1);
+            }
+
+            .btn {
+              //.border_1px_all(rgba(99, 137, 222, 1));
+              .flex_center;
+              width: 129px;
+              height: 45px;
+              color: rgba(99, 137, 222, 1);
+              border: 1px solid rgba(99, 137, 222, 1);
+              border-radius: 26px;
+            }
+          }
+        }
+
+        .right_bottom {
+          .vertical_center;
+          height: 45px;
+          font-size: 23px;
+          color: rgba(41, 41, 41, 1);
+        }
+      }
+    }
+
+    .coupon_footer {
+      font-size: 24px;
+      line-height: 24px;
+      color: rgba(103, 103, 103, 1);
+      padding: 27px;
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+
+      .desc {
+        margin-bottom: 23px;
+      }
+    }
+  }
+
+  .user {
+    .flex_between_row;
+  }
+
+
+}

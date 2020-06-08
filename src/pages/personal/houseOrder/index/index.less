@@ -1,0 +1,125 @@
+@import "~@/styles/mixin.less";
+
+.page_personal_order_index {
+  padding-top: 90px;
+  min-height: 100%;
+  background: #eee;
+
+  .at-tabs-pane, .at-tabs__header {
+    background: #eee;
+  }
+
+  .app_common_header {
+    background: #fff;
+
+    .title {
+      color: #333;
+    }
+
+    .back {
+      background: url('../../../../assets/imgs/common/back.png') no-repeat center center/ contain;
+    }
+  }
+
+  .list {
+    padding: 0 20px;
+    background: #eee;
+
+    .item {
+      background: rgba(255, 255, 255, 1);
+      border-radius: 10px;
+      margin-top: 27px;
+      padding: 13px 14px 29px;
+
+      .top {
+        .flex_between_row;
+        margin-bottom: 30px;
+
+        .title_wrap {
+          .flex_row;
+          .vertical_center;
+
+          .logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 4px;
+            margin-right: 10px;
+          }
+
+          .title {
+            font-size: 28px;
+            color: rgba(51, 51, 51, 1);
+          }
+
+          .status {
+
+          }
+        }
+      }
+
+      .center {
+        .flex_row;
+
+        .thumb {
+          width: 149px;
+          height: 157px;
+          background: #eee;
+          margin-right: 21px;
+        }
+
+        .right {
+          .title {
+            font-size: 27px;
+            font-weight: bold;
+            color: rgba(51, 51, 51, 1);
+          }
+
+          .addr {
+
+          }
+
+          .num {
+          }
+
+          .price_wrap {
+
+            .price {
+
+            }
+          }
+        }
+      }
+
+      .bottom {
+        .flex_row;
+        justify-content: flex-end;
+
+        .btn {
+          .flex_center;
+          width: 155px;
+          height: 54px;
+          border-radius: 27px;
+          font-size: 24px;
+          color: rgba(153, 153, 153, 1);
+          margin-left: 30px;
+        }
+
+        .btn_cancel {
+          border: 1PX solid rgba(153, 153, 153, 1);
+        }
+
+        .btn_sure {
+          color: rgba(57, 116, 239, 1);
+          border: 1PX solid rgba(57, 116, 239, 1);
+        }
+      }
+    }
+  }
+
+  .empty {
+    .flex_center;
+    padding-top: 100px;
+    background: #fff;
+    color: #999;
+  }
+}

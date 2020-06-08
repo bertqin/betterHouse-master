@@ -1,0 +1,132 @@
+@import "~@/styles/mixin.less";
+
+.page_showroom_list {
+  .banner {
+    height: 360px;
+  }
+
+  .list_wrap {
+    position: relative;
+    top: -40px;
+
+    .list {
+      padding: 0 20px;
+    }
+
+    .item {
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      padding: 23px 15px;
+      margin-bottom: 40px;
+
+      .title_wrap {
+        font-size: 32px;
+        font-weight: 500;
+        color: rgba(245, 74, 56, 1);
+      }
+
+
+      .tags {
+        .flex_row;
+        margin-top: 15px;
+      }
+
+      .tag {
+        .flex_center;
+        font-size: 22px;
+        font-weight: 400;
+        color: rgba(38, 38, 38, 1);
+        min-width: 80px;
+        padding: 3px 5px;
+        background: rgba(203, 203, 203, 1);
+        opacity: 0.75;
+        border-radius: 5px 5px 5px 5px;
+        margin-right: 5px;
+      }
+
+      .desc_wrap {
+        .flex_row;
+        font-size: 23px;
+
+        .countdown_wrap {
+          .flex_row;
+          margin-right: 25px;
+
+          .countdown {
+            color: rgba(251, 97, 74, 1);
+          }
+        }
+
+        .sign_num {
+          .flex_row;
+
+          .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+          }
+
+          .num {
+            color: rgba(251, 97, 74, 1);
+          }
+        }
+      }
+
+      .content {
+        .flex_row;
+        margin-top: 33px;
+        margin-bottom: 30px;
+
+        .thumb {
+          width: 248px;
+          height: 173px;
+          border-radius: 5px 5px 5px 5px;
+          background: #eee;
+          margin-right: 30px;
+        }
+
+        .content_right {
+          flex: 1;
+          font-size: 25px;
+          color: rgba(103, 103, 104, 1);
+
+          .title {
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 10px;
+            color: rgba(24, 24, 24, 1);
+          }
+
+          .addr_wrap {
+            .flex_between_row;
+            .vertical_center;
+
+            .address {
+              .word_line(1);
+              font-size: 25px;
+            }
+
+            .price {
+              font-size: 32px;
+              font-weight: bold;
+              color: rgba(255, 83, 59, 1);
+            }
+          }
+
+          .space {
+            font-size: 25px;
+          }
+        }
+      }
+
+      .btn_sign {
+        .flex_center;
+        height: 62px;
+        background: linear-gradient(0deg, rgba(255, 139, 29, 1), rgba(255, 185, 84, 1));
+        color: #fff;
+        font-size: 30px;
+      }
+    }
+  }
+}

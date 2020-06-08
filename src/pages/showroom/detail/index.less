@@ -1,0 +1,256 @@
+@import "~@/styles/mixin.less";
+
+.page_showroom_detail {
+  padding-bottom: 300px;
+
+  .swiper {
+    height: 480px;
+
+    .img {
+      width: 100%;
+    }
+  }
+
+  .operator {
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+    .flex_row;
+
+    .btn {
+      .flex_center;
+      width: 340px;
+      height: 85px;
+      font-size: 32px;
+      border-radius: 10px;
+      color: #fff;
+    }
+
+    .fav_btn {
+      .flex_center_column;
+      padding-left: 59px;
+      padding-right: 30px;
+    }
+
+    .fav_icon {
+      width: 42px;
+      height: 40px;
+      margin-bottom: 6px;
+    }
+
+    .yuyue_btn {
+      .flex_center_column;
+      padding-left: 30px;
+      padding-right: 50px;
+    }
+
+    .yuyue_icon {
+      width: 42px;
+      height: 40px;
+      margin-bottom: 6px;
+    }
+
+    .text {
+      font-size: 24px;
+      line-height: 24px;
+      color: rgba(150, 151, 156, 1);
+    }
+
+    .ask_btn {
+      width: 189px;
+      height: 74px;
+      background: rgba(67, 140, 243, 1);
+      border-radius: 5px;
+      margin-right: 23px;
+    }
+
+    .buy_btn {
+      width: 189px;
+      height: 74px;
+      background: linear-gradient(81deg, rgba(253, 112, 56, 1), rgba(244, 20, 20, 1));
+      border-radius: 5px 5px 5px 5px;
+    }
+  }
+
+  .fangyuan {
+
+    padding: 0 53px 0 42px;
+    background: rgba(229, 247, 239, 1);
+
+    .tabs {
+      .flex_row;
+      flex-wrap: wrap;
+      padding: 9px 0 15px;
+
+      .tab {
+        border: 1PX solid rgba(67, 140, 243, 1);
+        border-radius: 5px 5px 5px 5px;
+        margin-right: 6px;
+        color: rgba(67, 140, 243, 1);
+        font-size: 23px;
+        line-height: 23px;
+        padding: 9px 2px;
+      }
+    }
+
+    .floor {
+      background: rgba(238, 238, 238, 1);
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+      border-radius: 5px 5px 5px 5px;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+
+    .content {
+      max-height: 459px;
+      overflow: hidden;
+      padding: 2px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .more_wrap {
+    .flex_center;
+    height: 80px;
+    color: rgba(67, 140, 243, 1);
+  }
+
+  .main_content {
+
+    .content_item {
+      border-top: 16px solid #EFF1F3;
+    }
+
+    .top {
+      background: #fff;
+      margin: 0 auto;
+      padding: 50px 19px 20px;
+      color: #7D8084;
+
+      .title {
+        font-weight: bold;
+        color: rgba(0, 0, 0, 1);
+        font-size: 36px;
+        margin-bottom: 8px;
+      }
+
+      .tags {
+        .flex_row;
+        padding-bottom: 27px;
+        border-bottom: 1PX solid rgba(191, 191, 191, 1);;
+      }
+
+      .tag {
+        background: #e8e8e8;
+        border-radius: 5px;
+        color: rgba(38, 38, 38, 1);
+        margin-right: 9px;
+        padding: 5px 6px;
+        line-height: 23px;
+        font-size: 23px;
+      }
+
+      .price {
+        color: rgba(255, 0, 0, 1);
+        font-size: 36px;
+        margin-top: 20px;
+      }
+
+      .params {
+        padding-top: 18px;
+        padding-bottom: 24px;
+        font-size: 24px;
+        line-height: 24px;
+      }
+
+      .open_time {
+        margin-bottom: 22px;
+      }
+
+      .address {
+        margin-bottom: 22px;
+      }
+
+      .tel_wrap {
+        .flex_row;
+      }
+
+      .tel {
+        color: rgba(255, 0, 0, 1);
+      }
+
+      .btn_more_wrap {
+        .flex_center;
+        height: 70px;
+        color: rgba(0, 0, 0, .5);
+        border-bottom: 1PX solid rgba(191, 191, 191, 1);
+      }
+
+      .more_icon {
+        width: 22px;
+        height: 13px;
+        margin-left: 11px;
+      }
+    }
+
+    .detail {
+      .ad1 {
+        height: 137px;
+      }
+    }
+  }
+
+
+  .huxing_wrap {
+    .huxing_title {
+      font-size: 35px;
+      font-weight: bold;
+      padding: 17px 19px;
+    }
+
+    .huxing_list {
+      .huxing_item {
+        width: 277px;
+        padding: 0 20px;
+        margin-right: 30px;
+
+        .huxing_thumb {
+          width: 277px;
+          height: 271px;
+          background: #eee;
+          margin-bottom: 23px;
+        }
+
+        .title {
+          font-size: 28px;
+          color: rgba(46, 46, 46, 1);
+          line-height: 28px;
+          margin-bottom: 9px;
+          .word_line(1);
+        }
+
+        .desc {
+          font-size: 23px;
+          color: rgba(46, 46, 46, 1);
+          margin-bottom: 13px;
+        }
+
+        .price {
+          font-size: 25px;
+          color: rgba(255, 0, 0, 1);
+        }
+      }
+    }
+
+  }
+
+
+  .activity_ad {
+    padding: 60px 35px;
+  }
+}

@@ -1,0 +1,134 @@
+@import "~@/styles/mixin.less";
+
+.page_news_list {
+    padding-top: 180px;
+
+    .top_header {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 180px;
+    }
+
+    .search_bar {
+        .flex_row;
+        height: 90px;
+        padding: 0 10px;
+        background: url("../../../assets/imgs/common/search_bg.png") no-repeat;
+
+
+        .at-input__container {
+            width: 100%;
+        }
+
+        .input_wrap {
+            flex: 1;
+            padding: 23px 0;
+
+            .input {
+                height: 42px;
+                padding-left: 68px;
+                border-radius: 20px;
+                background: #fff;
+                font-size: 16px;
+                overflow: hidden;
+                position: relative;
+
+                &::before {
+                    content: '\200b';
+                    position: absolute;
+                    left: 33px;
+                    top: 10px;
+                    width: 24px;
+                    height: 24px;
+                    background: url("../../../assets/imgs/common/house_search.png") no-repeat center center /contain;
+                }
+
+                .at-input {
+                    .vertical_center;
+                    margin-left: 0;
+                    padding: 0 10px;
+
+                    input {
+                        color: #96979C;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .news_list_all_top {
+        // height: 474px;
+    }
+
+
+    .top_navbar {
+        .flex_row;
+        height: 90px;
+
+        .tag {
+            .flex_center;
+            flex: 1;
+
+            .text {
+                line-height: 70px;
+                border-bottom: 1px solid #fff;
+            }
+
+            &.on {
+                .text {
+                    border-bottom: 1px solid rgba(67, 123, 241, 1);;
+                }
+            }
+        }
+    }
+
+    .list_wrapper {
+        padding: 0 20px;
+
+        .list {
+
+            .item {
+                .flex_row;
+                .border_1px(bottom; rgba(191, 191, 191, 1););
+                position: relative;
+                padding: 27px 0;
+
+                .thumb {
+                    width: 210px;
+                    height: 151px;
+                    margin-right: 19px;
+                }
+
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+
+                    .title {
+                        flex: 1;
+                        font-size: 26px;
+                        color: rgba(40, 40, 40, 1);
+                        line-height: 37px;
+                    }
+
+                    .desc_wrap {
+                        .flex_between_row;
+                        font-size: 24px;
+                        color: rgba(40, 40, 40, .6);
+
+                        .from {
+
+                        }
+
+                        .time {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

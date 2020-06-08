@@ -1,0 +1,214 @@
+@import "~@/styles/mixin.less";
+
+.page_house_choose {
+  padding-top: 90px;
+  padding-bottom: 300px;
+
+  .swiper {
+    height: 480px;
+
+    .img {
+      width: 100%;
+    }
+  }
+
+  .tab1_row {
+    .flex_row;
+    border-bottom: 1PX solid rgba(210, 210, 210, .8);
+
+    .tab1 {
+      .flex_center;
+      padding: 0 20px;
+      height: 80px;
+      font-size: 29px;
+      font-weight: 500;
+      color: rgba(62, 62, 62, 1);
+
+      &.on {
+        color: rgba(67, 123, 241, 1);
+        position: relative;
+
+        &:after {
+          content: '\200b';
+          position: absolute;
+          width: 50px;
+          height: 1px;
+          background: rgba(67, 123, 241, 1);
+          bottom: 1px;
+        }
+      }
+
+    }
+
+  }
+
+  .tab2_row {
+    .flex_row;
+    border-bottom: 1PX solid rgba(210, 210, 210, .8);
+
+    .tab2 {
+      .flex_center;
+      padding: 0 20px;
+      height: 80px;
+      font-size: 27px;
+      font-weight: 500;
+      color: rgba(67, 123, 241, 1);
+
+      &.on {
+        color: rgba(67, 123, 241, 1);
+        position: relative;
+
+        &:after {
+          content: '\200b';
+          position: absolute;
+          width: 50px;
+          height: 1px;
+          background: rgba(67, 123, 241, 1);
+          bottom: 1px;
+        }
+      }
+    }
+
+  }
+
+  .tags {
+    .flex_row;
+    color: rgba(62, 62, 62, 1);
+    font-size: 30px;
+    height: 80px;
+    border-bottom: 1PX solid rgba(210, 210, 210, .8);
+
+    .tag {
+      .flex_center;
+      flex: 1;
+    }
+
+    .icon_full {
+      width: 23px;
+      height: 23px;
+      background: rgba(255, 0, 0, 1);
+      opacity: 0.5;
+      border-radius: 2px 2px 2px 2px;
+      margin-right: 5px;
+    }
+
+    .icon_null {
+      width: 23px;
+      height: 23px;
+      border: 1PX solid rgba(113, 154, 246, 1);
+      border-radius: 2px 2px 2px 2px;
+      margin-right: 5px;
+    }
+
+    .cansell {
+      color: rgba(67, 123, 241, 1);
+    }
+  }
+
+  .content {
+    padding: 34px 25px;
+
+    .floor {
+      .flex_row;
+      height: 73px;
+      margin-bottom: 12px;
+
+      .rooms {
+        .flex_row;
+      }
+
+      .room {
+        .flex_row;
+        width: 180px;
+        height: 73px;
+        padding: 11px;
+        box-sizing: border-box;
+        margin-right: 16px;
+        .border_1px_all(rgba(113, 154, 246, 1));
+        border-radius: 10px;
+
+        &:after {
+          border-radius: 20px;
+        }
+
+        // 已售出
+        &.status_3 {
+          position: relative;
+          color: #999;
+
+          &:after {
+            border: none;
+            border-radius: 10px;
+          }
+
+          &:before {
+            content: '\200b';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: red;
+            z-index: 1;
+            background: url("../../../assets/imgs/common/selled.png") no-repeat center center/contain;
+          }
+        }
+
+        &.on {
+          background: rgba(113, 154, 246, 1);
+        }
+      }
+
+      .room_name {
+        .flex_center;
+        flex: 1;
+        .word_line(1);
+      }
+
+      .room_desc {
+        width: 80px;
+        font-size: 20px;
+        line-height: 20px;
+        color: rgba(80, 80, 80, .6);
+
+        .room_desc_row {
+          margin-bottom: 8px;
+        }
+      }
+
+      .floor_num {
+        .flex_center;
+        margin-right: 16px;
+        width: 84px;
+        height: 73px;
+        background: rgba(67, 123, 241, .4);
+        border-radius: 10px;
+        font-size: 27px;
+        font-weight: bold;
+        color: rgba(30, 30, 30, 1);
+      }
+    }
+
+  }
+
+  .operator {
+    .flex_row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+    .btn_common {
+      height: 90px;
+      flex: 1;
+      background: linear-gradient(to bottom, #91b0fa, #2d6cee);
+    }
+
+    .btn_detail {
+      margin-right: 20px;
+      background: linear-gradient(to bottom, #fd7038, #f41414);
+    }
+  }
+}

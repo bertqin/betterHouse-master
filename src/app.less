@@ -1,0 +1,232 @@
+@import "~@/styles/mixin.less";
+
+Page {
+    font-size: 26px;
+    color: rgba(38, 38, 38, 1);
+}
+
+#app {
+    font-size: 26px;
+    color: rgba(38, 38, 38, 1);
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.taro-img {
+    display: block;
+}
+
+.taro-tabbar__tabbar {
+    box-sizing: border-box;
+    height: 96px;
+
+    .weui-tabbar__item img {
+        width: auto;
+        height: 34px;
+        margin-bottom: 4px;
+        margin-top: 10px;
+    }
+
+    .weui-tabbar__item:nth-child(3) {
+
+        img {
+            transform: scale(2) translateY(-8px);
+        }
+    }
+
+    .weui-tabbar {
+        height: 100%;
+    }
+}
+
+.app_common_header {
+
+    .flex_between_row;
+    height: 90px;
+    font-size: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    .left {
+        .flex_center;
+        width: 100px;
+        height: 90px;
+
+        .back {
+            width: 21px;
+            height: 35px;
+            background: url('assets/imgs/common/back.png') no-repeat center center/ contain;
+        }
+    }
+
+    .title {
+        .flex_center;
+        flex: 1;
+    }
+
+    .right {
+        font-size: 26px;
+        width: 100px;
+        height: 90px;
+        .flex_center;
+
+        .icon {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    &.white {
+        .back {
+            background: url('assets/imgs/common/back_white.png') no-repeat center center/ contain;
+        }
+
+        .title {
+            color: #fff;
+        }
+    }
+
+    &.on {
+        background: #6190e8;
+
+        .title {
+            color: #fff;
+        }
+
+        .back {
+            background: url('assets/imgs/common/back_white.png') no-repeat center center/ contain;
+        }
+    }
+
+}
+
+
+.btn_common {
+    .flex_center;
+    height: 103px;
+    background: rgba(113, 154, 246, 1);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 34px;
+}
+
+.app_right_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #e3e3e3;
+    height: 90px;
+    border-bottom: 1PX solid rgba(105, 105, 105, .3);
+
+    .left {
+        .flex_row;
+        .vertical_center;
+        height: 90px;
+        padding-left: 31px;
+        font-size: 32px;
+        color: rgba(50, 50, 50, 1);
+        line-height: 32px;
+
+        .back {
+            width: 21px;
+            height: 35px;
+            margin-right: 17px;
+        }
+    }
+}
+
+.at-tabs__header {
+    position: fixed;
+    z-index: 1;
+}
+
+.at-tabs__body {
+    padding-top: 80px;
+}
+
+
+.app_yuyue_form_wrap {
+    .close {
+        position: absolute;
+        right: 13px;
+        top: 13px;
+        width: 54px;
+        height: 54px;
+        padding: 13px;
+        box-sizing: border-box;
+        background: url("./assets/imgs/common/close.png") no-repeat center center / contain;
+        background-origin: content-box;
+        z-index: 1;
+    }
+
+    .form {
+        .label {
+            margin-bottom: 20px;
+        }
+
+        .at-input {
+            height: 62px;
+            padding: 0;
+            margin-left: 0;
+            margin-bottom: 20px;
+            font-size: 26px;
+
+            &:after {
+                border: none;
+                top: 0;
+            }
+
+            .border_1px_all(rgba(191, 191, 191, 1));
+
+            .at-input__container {
+                height: 100%;
+            }
+
+            input {
+                padding: 15px 23px 21px;
+                height: 100%;
+                font-size: 26px;
+            }
+        }
+    }
+
+    .btn_wrap {
+        margin-top: 40px;
+        .flex_center;
+
+        .btn {
+            .flex_center;
+            width: 100%;
+            height: 62px;
+            background: linear-gradient(0deg, rgba(45, 108, 238, 1), rgba(145, 176, 250, 1));
+            border-radius: 10px;
+            font-size: 32px;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+.app_list_empty {
+    .flex_center;
+    height: 200px;
+}
+
+.mask {
+    &::before {
+        content: '\200b';
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: rgba(0, 0, 0, .6);
+    }
+}

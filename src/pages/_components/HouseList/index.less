@@ -1,0 +1,117 @@
+@import "~@/styles/mixin.less";
+
+.component_house_list {
+  font-size: 32px;
+  padding: 0 20px;
+
+  .house_item {
+    .border_1px(bottom, #e2e2e2);
+    box-sizing: border-box;
+    padding: 40px 0 38px;
+    position: relative;
+
+
+    .content {
+      .flex_row;
+
+      .status {
+        font-size: 23px;
+        font-weight: 400;
+        color: rgba(255, 129, 100, 1);
+        background: rgba(255, 129, 100, .4);
+        border-radius: 3px;
+        padding: 2px;
+      }
+
+      .thumb {
+        width: 206px;
+        height: 155px;
+        background: #eee;
+        border-radius: 10px;
+        margin-right: 20px;
+      }
+
+      .right {
+        // line-height: 26px;
+        flex: 1;
+
+        .title_wrap {
+          .flex_row;
+          margin-bottom: 13px;
+        }
+
+        .title {
+          margin-right: 26px;
+          font-size: 32px;
+          line-height: 32px;
+          font-weight: bold;
+          color: rgba(0, 0, 0, 1);
+        }
+
+        .address {
+          .word_line(1);
+          font-size: 22px;
+          line-height: 22px;
+          color: rgba(38, 38, 38, 1);
+        }
+
+
+        .tags {
+          .flex_row;
+          margin-top: 20px;
+        }
+
+        .tag {
+          .flex_center;
+          font-size: 22px;
+          font-weight: 400;
+          color: rgba(38, 38, 38, 1);
+          min-width: 80px;
+          padding: 3px 5px;
+          background: rgba(203, 203, 203, 1);
+          opacity: 0.75;
+          border-radius: 5px 5px 5px 5px;
+          margin-right: 5px;
+        }
+
+        .price {
+          margin-top: 15px;
+          font-size: 28px;
+          font-weight: 400;
+          color: rgba(255, 0, 0, 1);
+        }
+      }
+    }
+
+
+    .tab_sell_wrap {
+      .flex_row;
+      border: 1PX solid rgba(255, 0, 0, 1);
+      border-radius: 20px;
+      font-size: 22px;
+      max-height: 28px;
+      overflow: hidden;
+
+      .tab_sell {
+        .flex_center;
+        padding: 2px 5px;
+        color: rgba(255, 0, 0, 1);
+      }
+
+      .tab_unsell {
+        .flex_center;
+        padding: 2px 5px;
+        color: #fff;
+        background: rgba(255, 0, 0, 1);
+      }
+    }
+
+    .redpack {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      width: 124px;
+      height: 57px;
+    }
+  }
+}

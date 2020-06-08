@@ -1,0 +1,396 @@
+@import "~@/styles/mixin.less";
+
+.page_index {
+
+    .search_bar {
+        .flex_row;
+        padding: 0 10px;
+        background: url("../../assets/imgs/common/search_bg.png") no-repeat;
+
+        .logo {
+            .flex_center;
+            width: 124px;
+            padding: 23px 16px 23px 0;
+            background: url("../../assets/imgs/common/logo.png") no-repeat center center/ 79px 23px;
+        }
+
+        .input_wrap {
+            flex: 1;
+            padding: 23px 0;
+
+            .input {
+                height: 42px;
+                padding-left: 68px;
+                border-radius: 20px;
+                background: #fff;
+                font-size: 16px;
+                overflow: hidden;
+                position: relative;
+
+                &::before {
+                    content: '\200b';
+                    position: absolute;
+                    left: 33px;
+                    top: 10px;
+                    width: 24px;
+                    height: 24px;
+                    background: url("../../assets/imgs/common/house_search.png") no-repeat center center /contain;
+                }
+
+                .at-input {
+                    .vertical_center;
+                    margin-left: 0;
+                    padding: 0 10px;
+
+                    input {
+                        color: #96979C;
+                    }
+                }
+            }
+        }
+
+        .map_btn {
+            width: 166px;
+            .flex_center;
+          }
+      
+          .map_search {
+            width: 122px;
+            height: 37px;
+          }
+          
+        .user_wrap {
+            width: 89px;
+            padding: 23px 0;
+            .flex_center;
+
+            .user {
+                width: 44px;
+                height: 44px;
+                background: url("../../assets/imgs/common/user.png") no-repeat center center/contain;
+            }
+        }
+    }
+
+    .banner {
+        height: 333px;
+    }
+
+    .wrapper {
+        padding: 40px 20px;
+    }
+
+    .find_house_list {
+        .flex_between_row;
+        margin-bottom: 40px;
+    }
+
+    .find_house_item {
+        width: 227px;
+        height: 147px;
+    }
+
+    .toutiao {
+        .flex_row;
+
+        .icon {
+            width: 83px;
+            height: 69px;
+            margin-right: 5px;
+            margin-bottom: 8px;
+        }
+
+        .news_list {
+            flex: 1;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            margin-right: 10px;
+            background: rgba(217, 217, 217, 1);
+        }
+
+        .news_item {
+            .vertical_center;
+            .flex_row;
+            font-weight: 300;
+            font-size: 24px;
+            color: rgba(0, 0, 0, 1);
+        }
+    }
+
+    .ad_index_mid {
+        height: 130px;
+        margin: 10px 0 40px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .guide_header {
+        height: 46px;
+        margin-bottom: 39px;
+    }
+
+    .guide_1 {
+        margin-bottom: 40px;
+
+        .guide_1_header {
+            height: 128px;
+            margin-bottom: 6px;
+        }
+    }
+
+    .guide_1_item {
+        // box-sizing: border-box;
+        padding: 15px 5px 11px;
+        // box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.41);
+        margin-bottom: 20px;
+
+
+        .content {
+            .flex_row;
+            margin-bottom: 16px;
+
+            .thumb {
+                width: 206px;
+                height: 155px;
+                background: #eee;
+                border-radius: 10px;
+                margin-right: 20px;
+                overflow: hidden;
+            }
+
+            .right {
+                // line-height: 26px;
+                flex: 1;
+
+                .title_wrap {
+                    .flex_row;
+                    margin-bottom: 13px;
+                }
+
+                .title {
+                    .word_line(1);
+                    margin-right: 10px;
+                    font-size: 28px;
+                    line-height: 32px;
+                    font-weight: bold;
+                    color: rgba(0, 0, 0, 1);
+                    flex: 1;
+                }
+
+                .address {
+                    .word_line(1);
+                    font-size: 22px;
+                    color: rgba(38, 38, 38, 1);
+                }
+
+                .tags {
+                    .flex_row;
+                    margin-top: 15px;
+                }
+
+                .tag {
+                    .flex_center;
+                    font-size: 22px;
+                    font-weight: 400;
+                    color: rgba(38, 38, 38, 1);
+                    min-width: 80px;
+                    padding: 3px 5px;
+                    background: #e8e8e8;
+                    opacity: 0.75;
+                    border-radius: 5px 5px 5px 5px;
+                    margin-right: 10px;
+                }
+
+                .price {
+                    margin-top: 19px;
+                    font-size: 28px;
+                    font-weight: 400;
+                    color: rgba(255, 0, 0, 1);
+                    // line-height: 8px;
+                }
+            }
+        }
+
+        .btns {
+            .flex_between_row;
+
+            .btn {
+                .flex_center_row;
+                width: 290px;
+                height: 64px;
+                background: linear-gradient(0deg, rgba(253, 186, 89, 1) 0%, rgba(248, 198, 148, 1) 100%);
+                border-radius: 10px;
+                color: rgba(129, 81, 25, 1);
+            }
+
+            .icon {
+                margin-right: 15px;
+            }
+
+            .wechat {
+                width: 35px;
+                height: 33px;
+            }
+
+            .tel {
+                width: 27px;
+                height: 31px;
+            }
+        }
+    }
+
+    .guide_2_list {
+        .flex_between_row;
+
+        .guide_2_item {
+            width: 346px;
+
+            .content {
+                .thumb {
+                    width: 346px;
+                    height: 198px;
+                    border-radius: 11px;
+                    overflow: hidden;
+                    margin-bottom: 14px;
+                    position: relative;
+                    background: #eee;
+                    overflow: hidden;
+                }
+
+                .price {
+                    .flex_center;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 36px;
+                    background: rgba(0, 0, 0, 1);
+                    opacity: 0.6;
+                    font-size: 21px;
+                    color: rgba(254, 254, 254, 1);
+                    line-height: 6px;
+                }
+            }
+
+            .right {
+                line-height: 26px;
+                flex: 1;
+
+                .title_wrap {
+                    .flex_row;
+                    margin-bottom: 13px;
+                }
+
+                .title {
+                    line-height: 28px;
+                    font-size: 28px;
+                    font-weight: bold;
+                    color: rgba(0, 0, 0, 1);
+                }
+
+                .address {
+                    .word_line(1);
+                    font-size: 22px;
+                    color: rgba(38, 38, 38, 1);
+                }
+
+                .tags {
+                    .flex_row;
+                    margin-top: 15px;
+                }
+
+                .tag {
+                    .flex_center;
+                    font-size: 22px;
+                    font-weight: 400;
+                    color: rgba(38, 38, 38, 1);
+                    min-width: 80px;
+                    padding: 3px 5px;
+                    background: #f1f1f1;
+                    opacity: 0.75;
+                    border-radius: 5px 5px 5px 5px;
+                    margin-right: 10px;
+                }
+
+                .price {
+                    margin-top: 19px;
+                    font-size: 28px;
+                    font-weight: 400;
+                    color: rgba(255, 0, 0, 1);
+                }
+            }
+        }
+    }
+
+    .tab_sell_wrap {
+        .flex_row;
+        border: 1PX solid rgba(255, 0, 0, 1);
+        border-radius: 20px;
+        font-size: 20px;
+        overflow: hidden;
+
+        .tab_sell {
+            .flex_center;
+            padding: 2px 5px;
+            color: rgba(255, 0, 0, 1);
+        }
+
+        .tab_unsell {
+            .flex_center;
+            padding: 2px 5px;
+            color: #fff;
+            background: rgba(255, 0, 0, 1);
+        }
+    }
+
+    .house_list_wrap {
+
+        &.on {
+            padding-top: 88px;
+            .search_select {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+            }
+        }
+
+        .tabs {
+            .flex_between_row;
+            padding-bottom: 36px;
+            border-bottom: 1PX solid rgba(191, 191, 191, 1);;
+
+            .tab {
+                .flex_center;
+                width: 25%;
+                font-size: 23px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 1);
+
+                &.on {
+                    font-size: 32px;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 1);
+                    line-height: 12px;
+
+                    background: linear-gradient(157deg, rgba(45, 108, 238, 1) 0%, rgba(104, 144, 239, 1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+
+        .guide_1_list{
+            padding: 0 20px;
+        }
+        .guide_1_item {
+            border-bottom: 1px solid #e1e1e1; /*no*/
+        }
+    }
+
+}

@@ -1,0 +1,80 @@
+@import "~@/styles/mixin.less";
+
+
+.page_activity_balanceList {
+  padding-top: 90px;
+
+  .total {
+    padding: 31px 0 33px 49px;
+    background: #e3e3e3;
+
+    .date {
+      font-size: 36px;
+      line-height: 36px;
+      color: rgba(46, 46, 46, 1);
+      margin-bottom: 23px;
+    }
+
+    .desc_wrap {
+      .desc {
+        font-size: 28px;
+        color: rgba(135, 135, 135, 1);
+      }
+    }
+  }
+
+  .list {
+
+    .item {
+      .flex_row;
+      padding: 36px 35px 39px 38px;
+      border-bottom: 1PX solid rgba(105, 105, 105, .25);
+
+      .icon {
+        width: 87px;
+        height: 87px;
+        border-radius: 50%;
+        margin-right: 27px;
+      }
+
+      .center {
+        flex: 1;
+
+        .title {
+          .flex_row;
+          font-size: 32px;
+          color: rgba(48, 48, 48, 1);
+          line-height: 32px;
+          margin-top: 5px;
+          margin-bottom: 22px;
+
+          .status {
+            font-size: 22px;
+            color: #999;
+          }
+        }
+
+        .time {
+          font-size: 28px;
+          color: rgba(177, 177, 177, 1);
+          line-height: 28px;
+        }
+
+
+      }
+
+      .right {
+        font-size: 33px;
+        font-weight: 500;
+        color: rgba(48, 48, 48, 1);
+        line-height: 32px;
+        margin-top: 5px;
+
+
+        &.add {
+          color: rgba(249, 166, 56, 1)
+        }
+      }
+    }
+  }
+}

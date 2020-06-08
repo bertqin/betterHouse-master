@@ -1,0 +1,122 @@
+@import "~@/styles/mixin.less";
+
+.page_house_order {
+  padding-top: 120px;
+  padding-bottom: 180px;
+
+  .detail {
+    .flex_row;
+    padding: 0 28px;
+
+    .thumb_wrap {
+      margin-right: 24px;
+
+      .thumb {
+        width: 226px;
+        height: 144px;
+        background: #eee;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      .title {
+        flex: 1;
+        font-size: 32px;
+        color: rgba(104, 104, 104, 1);
+      }
+
+      .price_wrap {
+        .flex_between_row;
+        .vertical_center;
+
+        .price {
+          font-size: 32px;
+          color: rgba(56, 56, 56, 1);
+        }
+
+        .space {
+          font-size: 24px;
+          color: rgba(100, 100, 100, 1);
+        }
+      }
+    }
+  }
+
+  .user_wrap {
+    padding: 62px 32px 0 27px;
+
+    .user_title {
+      .vertical_center;
+      font-size: 28px;
+      color: rgba(109, 109, 109, 1);
+      margin-bottom: 30px;
+    }
+
+    .at-input {
+      margin-left: 0;
+      padding: 30px 0;
+
+      input {
+        text-align: right;
+        font-size: 27px;
+        color: rgba(143, 143, 143, 1);
+      }
+    }
+  }
+
+  .btn_wrap {
+    .flex_between_row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
+
+    .price {
+      .flex_center_column;
+      font-size: 33px;
+      color: rgba(255, 0, 0, 1);
+    }
+
+    .btn {
+      .flex_center;
+      width: 301px;
+      height: 93px;
+      background: linear-gradient(81deg, rgba(253, 112, 56, 1), rgba(244, 20, 20, 1));
+      border-radius: 10px;
+      font-size: 33px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  .about {
+    margin-top: 80px;
+    padding: 0 18px;
+
+    .title {
+      border-left: 9px solid rgba(0, 0, 0, .3);
+      color: rgba(0, 0, 0, .5);
+      font-size: 32px;
+      padding-left: 7px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .to_top_btn {
+    .flex_center;
+    width: 710px;
+    height: 67px;
+    background: rgba(229, 229, 229, 1);
+    border-radius: 7px;
+    margin-top: 50px;
+    color: rgba(67, 140, 243, .85);
+  }
+}

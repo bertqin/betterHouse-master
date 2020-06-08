@@ -1,0 +1,95 @@
+@import "~@/styles/mixin.less";
+
+.page_house_list {
+  padding-top: 176px;
+  padding-bottom: 100px;
+
+  .search_select {
+    position: fixed;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+  }
+
+  .search_bar {
+    .flex_row;
+    height: 88px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    .back_wrap {
+      .flex_center;
+      width: 74px;
+    }
+
+    .back {
+      width: 21px;
+      height: 35px;
+    }
+
+
+    .search_box {
+      .flex_center;
+      width: 507px;
+    }
+
+    .search_input_wrap {
+      .flex_center;
+      width: 507px;
+      height: 43px;
+      border-radius: 20px;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .map_btn {
+      width: 166px;
+      .flex_center;
+    }
+
+    .map_search {
+      width: 122px;
+      height: 37px;
+    }
+
+    .house_search {
+      width: 24px;
+      height: 24px;
+      margin-left: 33px;
+    }
+
+    .at-input {
+      flex: 1;
+      height: 37px;
+      padding: 0;
+      margin-left: 11px;
+
+      input {
+        font-size: 23px;
+        height: 37px;
+        color: rgba(150, 151, 156, 1);
+      }
+    }
+
+    .at-input__children {
+      display: none;
+    }
+
+    .at-input::after {
+      display: none;
+    }
+  }
+
+
+  .ad_top {
+    height: 120px;
+    background: #eee;
+    margin-bottom: 40px;
+  }
+}
